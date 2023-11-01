@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .calculator {
+    width: 250px;
+    margin: 100px auto;
+    background: #9b0606;
+    border: 5px solid #141313;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    background: #a83434;
+    border: 2px solid #1f201f;
+    border-radius: 5px;
+  }
+
+  label:hover {
+    background: #c83939;
+  }
+
+  input:checked + label {
+    background: #b17d16;
+  }
+</style>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <input type="radio" id="clear" name="operator">
+    <label for="clear">C</label>
+
+
+    <input type="radio" id="one" name="number">
+    <label for="one">1</label>
+
+    <input type="radio" id="two" name="number">
+    <label for="two">2</label>
+
+    <input type="radio" id="three" name="number">
+    <label for="three">3</label>
+
+    <input type="radio" id="add" name="operator">
+    <label for="add">+</label>
+
+    <input type="radio" id="four" name="number">
+    <label for="four">4</label>
+
+    <input type="radio" id="five" name="number">
+    <label for="five">5</label>
+
+    <input type="radio" id="six" name="number">
+    <label for="six">6</label>
+
+    <input type="radio" id="subtract" name="operator">
+    <label for="subtract">-</label>
+
+    <input type="radio" id="seven" name="number">
+    <label for="seven">7</label>
+
+    <input type="radio" id="eight" name="number">
+    <label for="eight">8</label>
+
+    <input type="radio" id="nine" name="number">
+    <label for="eight">9</label>
+
+    <input type="radio" id="divide" name="operator">
+    <label for="divide">/</label>
+
+    <input type="radio" id="point" name="number">
+    <label for="eight">.</label>
+
+    <input type="radio" id="zero" name="number">
+    <label for="zero">0</label>
+
+    <input type="radio" id="multiply" name="operator">
+    <label for="multiply">*</label>
+    
+    <input type="radio" id="calculate" name="operator">
+    <label for="calculate">=</label>
+   
+  </div>
+</body>
+</html>
